@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SleepyPi | Dashboard</title>
+	<link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+	<h1>SleepyPi</h1>
+	<div class="tracking">
+		<h2>While tracking your sleep</h2>
+		<p>Sound</p>
+		<div class="scroller" id="tracker-scroller">
+			<img class="scroller__image" id="rain" src="./assets/images/rain.jpg" alt="rain">
+			<img class="scroller__image scroller__image--focus" id="zen" src="./assets/images/zen.jpg" alt="zen">
+			<img class="scroller__image" id="sea" src="./assets/images/sea.jpg" alt="sea">
+		</div>
+		<div class="tracking-timer-container">
+			<input id="tracking-timer" type="number" min="1" max="30">
+			<p>min</p>
+		</div>
+		<p>Display</p>
+		<div class="tracking-display-container">
+			<select name="" id="tracking-display">
+				<option value="red light">red light</option>
+				<option value="colors">colors</option>
+				<option value="animation">animation</option>
+			</select>
+		</div>
+		
+	</div>
+	<div class="alarm">
+		<h2>YOUR alarm</h2>
+		<p>Sound</p>
+		<div class="scroller" id="alarm-scroller">
+			<img class="scroller__image" id="morning" src="./assets/images/rain.jpg" alt="morning">
+			<img class="scroller__image scroller__image--focus" id="metal" src="./assets/images/zen.jpg" alt="metal">
+			<img class="scroller__image" id="classic" src="./assets/images/sea.jpg" alt="classic">
+		</div>
+	</div>
+	<div class="wakeup">
+		<h2>when you wake up</h2>
+		<form action="">
+			<input type="radio" id="weather" name="wakeup-action" value="weather">
+			<label for="weather">Weather</label><br>
+			<input type="radio" id="msg" name="wakeup-action" value="msg">
+			<label for="msg">Message</label><br>
+			<input type="text" id="msg-input" disabled="true">
+		</form>
+
+	</div>
+	<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>

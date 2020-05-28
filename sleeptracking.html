@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SleepyPi | Sleep Tracking</title>
+	<link rel="stylesheet" href="./assets/css/sleeptracking.css">
+	
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+</head>
+<body>
+	<div class="swiper-container">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide" id="rain">Slide 1</div>
+			<div class="swiper-slide" id="zen">Slide 2</div>
+			<div class="swiper-slide" id="sea">Slide 3</div>
+			...
+		</div>
+	</div>
+
+	<div class="slidecontainer">
+		<input type="range" min="1" max="100" value="50" class="slider" id="volume">
+	</div>	
+	
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+	<script src="./assets/js/sleeptracking.js"></script>
+
+</body>
+</html>

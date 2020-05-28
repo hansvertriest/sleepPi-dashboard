@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed&display=swap');
+
+body {
+	background: #343434;
+	padding: 10px;
+}
+
+.scroller {
+	height: 216px;
+	margin-bottom: 20px;
+}
+
+.tracking .scroller .scroller__image, .alarm .scroller .scroller__image {
+	position: absolute;
+	width: 168px;
+	height: 168px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tracking .scroller .scroller__image:nth-child(1), .alarm .scroller .scroller__image:nth-child(1) {
+	left: 20px;
+}
+
+.tracking .scroller .scroller__image:nth-child(2), .alarm .scroller .scroller__image:nth-child(2) {
+	
+	left: 20px; 
+	right: 20px; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+.tracking .scroller .scroller__image:nth-child(3), .alarm .scroller .scroller__image:nth-child(3) {
+	right: 20px;
+}
+
+.tracking .scroller .scroller__image--focus, .alarm .scroller .scroller__image--focus {
+	width: 216px;
+	height: 216px;
+	z-index: 1;
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	font-weight: normal;
+	color: #75715B;
+}
+
+h2 {
+	font-family: Roboto Condensed;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+
+	/* identical to box height */
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+p, label {
+	font-family: Roboto Condensed;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+
+	/* identical to box height */
+
+	color: #787773;
+}
+
+.tracking-timer-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+}
+.tracking-timer-container #tracking-timer {
+	margin-right: 20px;
+}
+
+input, select {
+	background: #787773;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+	border: none;
+	padding: 6px;
+	font-family: Roboto Condensed;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+
+	color: #343434;
+}
+
+#tracking-display {
+	margin: 0 auto;
+}
+
+#msg-input {
+	margin: 10px 25px;
+}
+
+.tracking-display-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
