@@ -49,13 +49,13 @@ const checkParameters = async () => {
 
 	const urlParams = new URLSearchParams(window.location.search);
 	if (urlParams.get('sleeptracking') === 'start') {
-		url = `http://${URL}:5000/sleeptracking`;
+		url = `https://${URL}:5000/sleeptracking`;
 		fetch(url);
 	} else if (urlParams.get('sleeptracking') === 'stop')  {
-		url = `http://${URL}:5000/sleeptracking/stop`;
+		url = `https://${URL}:5000/sleeptracking/stop`;
 		fetch(url);
 	} else if (urlParams.get('sleeptracking') === 'pause')  {
-		url = `http://${URL}:5000/sleeptracking/pause`;
+		url = `https://${URL}:5000/sleeptracking/pause`;
 		fetch(url);
 	} 
 }
