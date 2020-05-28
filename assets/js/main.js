@@ -157,6 +157,14 @@ const checkParameters = async () => {
 		url = `http://${URL}:5000/sleeptracking/pause`;
 		fetch(url);
 	} 
+
+	if (urlParams.get('alarm') === 'start') {
+		url = `http://${URL}:5000/alarm`;
+		fetch(url);
+	} else if (urlParams.get('alarm') === 'stop')  {
+		url = `http://${URL}:5000/alarm/stop`;
+		fetch(url);
+	} 
 	
 }
 
