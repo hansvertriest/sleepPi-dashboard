@@ -20,6 +20,7 @@ let scrollerSelectedIndex = 0
 
 const updateIndex  = (index) => {
 	const elements = document.querySelectorAll('.swiper-slide');
+	console.log(index)
 	db.collection('configuratie').doc('config').update({
 		'toSleepMusic': elements.item(index).id
 	});

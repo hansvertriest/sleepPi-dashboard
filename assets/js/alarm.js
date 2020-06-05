@@ -25,6 +25,7 @@ const updateIndex  = (index) => {
 	});
 }
 
+
 mySwiper.on('slideNextTransitionStart', () => {
 	scrollerSelectedIndex +=1;
 	updateIndex(scrollerSelectedIndex);
@@ -54,7 +55,7 @@ const checkParameters = async () => {
 	} else if (urlParams.get('alarm') === 'stop')  {
 		url = `http://${URL}:5000/alarm/stop`;
 		fetch(url);
-	}fetch(url);
+	}
 }
 
 checkParameters();
